@@ -1,0 +1,39 @@
+#page-content {
+    position: relative;
+    /* this element's width controls the effective height */
+    /* of the video container's padding-bottom */
+    max-width: 640px;
+    /* max-height: 540px; */
+    margin: 10px auto;
+  }
+  #ad-window{
+    position: absolute;
+    background: rgba(37, 37, 37, 0.37);
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    display: none;
+  }
+  #video-container {
+    position: relative;
+    /* forces the container to match a 16x9 aspect ratio */
+    /* replace with 75% for a 4:3 aspect ratio, if needed */
+    padding-bottom: 56.25%;
+
+  }
+  
+  #video-element {
+    /* forces the contents to fill the container */
+    /* position: absolute; */
+    top: 25%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+  }
+  #ad-container {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    width: 50%;
+  }
